@@ -1,5 +1,5 @@
 const { exec } = require("node:child_process");
-const { stdout } = require("node:process");
+// const { stdout } = require("node:process");
 
 function checkPostgres() {
   exec("docker exec postgres-dev pg_isready --host localhost", handleReturn);
